@@ -34,7 +34,7 @@ section#information .naam               {  background-color: #0b0436;height: 20%
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#watkanik                        {display: flex; align-items: center;}
 section#watkanik .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
-section#watkanik .titel            {  background-color: #972285; width: 100%; font-size: 35px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white; display: flex;justify-content: center; align-items: center;}
+section#watkanik .titel            {  background-color: #04081d; width: 100%; font-size: 35px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white; display: flex;justify-content: center; align-items: center;}
 section#watkanik .leerdoel           {  background-color: #1d093e;  width: 100%; font-size: 15px;padding:40px;font-family: 'Courier New', Courier, monospace; }
 section#watkanik .vaardigheid          {  background-color: #1d093e;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
 

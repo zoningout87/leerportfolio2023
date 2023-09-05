@@ -3,7 +3,7 @@
 
 *                   { margin: 0;padding: 0;list-style: none;user-select: none;box-sizing: border-box;}
 
-body { background-color: #1c1f3e; }
+body { background-color: #1c1f3e; font-family: 'Courier New', Courier, monospace;color: aliceblue; }
 
 nav {flex-direction: column;position: relative;margin: 20px;width: 600px;height: 50px;background: #4d555c;border-radius: 8px;font-size: 0;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);font-family: 'Courier New', Courier, monospace;}
 nav a {font-size: 20px;text-transform: uppercase;color: white;text-decoration: none;line-height: 50px;position: relative;z-index: 1;display: inline-block;text-align: center;font-family: 'Courier New', Courier, monospace;}
@@ -12,30 +12,34 @@ nav a:nth-child(1) {width: 100px;}
 nav .start-home,a:nth-child(1):hover~.animation {width: 100px;left: 0px;}
 nav a:nth-child(2) {width: 110px;}
 nav a:nth-child(2):hover~.animation {width: 110px;left: 100px;}
-nav a:nth-child(3) {width: 100px;}
-nav a:nth-child(3):hover~.animation {width: 100px;left: 210px;}
-nav a:nth-child(4) {width: 160px;}
-nav a:nth-child(4):hover~.animation {width: 160px;left: 310px;}
-nav a:nth-child(5) {width: 120px;}
-nav a:nth-child(5):hover~.animation {width: 120px;left: 470px;}
+nav a:nth-child(3) {width: 130px;}
+nav a:nth-child(3):hover~.animation {width: 130px;left: 210px;}
+nav a:nth-child(4) {width: 100px;}
+nav a:nth-child(4):hover~.animation {width: 100px;left: 340px;}
+nav a:nth-child(5) {width: 100px;}
+nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 
 
-h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
 h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
 h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
 p {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+a {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+
+
 
 main section {background-color: #1c1f3e;}
 
-section#information .naam               {  background-color: #8c8c8c;height: 20%; width: 100%; font-size: 50px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
+section#information .naam               {  background-color: #13056d;height: 20%; width: 100%; font-size: 50px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
-section#watkanik                        {display: flex;}
-section#watkanik .wiebenik              {  background-color: #185264; width: 60%; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white;}
-section#watkanik .vaardigheid           {  background-color: #748c93; width: 40%; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;}
-
+section#watkanik                        {display: flex; align-items: center;}
+section#watkanik .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#watkanik .titel            {  background-color: #972285; width: 100%; font-size: 35px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white; display: flex;justify-content: center; align-items: center;}
+section#watkanik .leerdoel           {  background-color: #1d093e;  width: 100%; font-size: 15px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#watkanik .vaardigheid          {  background-color: #1d093e;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
 
 .geschiedenis                           {  background-color: #8bbfcf;height: 30%; width: 100%; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;}
-section#zoningout                       {display: flex; flex-direction: row-reverse;}
+section#zoningout                       {   display: flex; flex-direction: row-reverse;}
 section#zoningout  .zoningouttekst      {  background-color: #3c4a74; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
 section#zoningout  .zoningoutimage      {  background-color: #1c1f3e;height: 30%;  font-family: 'Courier New', Courier, monospace;}
 

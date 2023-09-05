@@ -22,9 +22,9 @@ main {display: grid;grid-template-columns: repeat(2, 4fr);grid-area: inhoud; }
 main section {background-color: #0f1660;aspect-ratio: 2; }
 
 
-section#about                        { display: flex; justify-content: center; align-items: center; background-color: #b2b2b2;}
+section#about                        { display: flex; justify-content: center; align-items: center; background-color: #4d697d;}
 section#about .inhoudAbout           {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
-section#about:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
+section#about:hover                        { display: flex; justify-content: center; align-items: center; background-color: #070e32;}
 
 section#frontend                     { display: flex; justify-content: center; align-items: center; background-color: #a6c1c0;}
 section#frontend .inhoudFrontend      {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}

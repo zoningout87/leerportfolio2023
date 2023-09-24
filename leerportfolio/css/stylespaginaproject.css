@@ -457,3 +457,64 @@ footer {
   color: #6fa4a6;
   height: 70px;
 }
+
+
+
+section#kleurslang {background-color: #000000e0;display: grid;grid-template-columns: repeat(20, 1fr);}
+
+section#kleurslang>div                      {overflow: hidden;}
+
+section#kleurslang>div>div                  {transform: scale(0);background-color: rgb(124, 0, 128);aspect-ratio: 1;transition: all 500ms cubic-bezier(0, 0, 0, 300);}
+
+section#kleurslang>div:hover>div            {transform: scale(1);}
+
+section#kleurslang>div:nth-child(3n)>div    {background-color: rgb(255, 0, 195);}
+section#kleurslang>div:nth-child(4n+1)>div  {background-color: rgb(254, 153, 0);}
+section#kleurslang>div:nth-child(6n+4)>div  {background-color: rgb(216, 245, 0);}
+section#kleurslang>div:nth-child(8n+3)>div  {background-color: rgb(64, 255, 0);}
+
+@keyframes ronddraaien{
+    0%     {transform: rotate(0deg);}
+    100%   {transform: rotate(360deg);} 
+   
+}
+
+
+@keyframes klokanimatie{
+    0%     {border-color: green;}
+    50%     {border-color: yellow;}
+    100%        {border-color: red;}    
+   
+}
+
+@keyframes tweedeanimatie{
+    0%       {border-color: red;}
+    20%        {border-color: darkred;}
+    40%         {border-color: red;}
+    60%         {border-color: darkred;}
+    80%        {border-color: red;}
+    100%        {border-color: darkred;}
+}
+
+section#stopwatch           { display: flex; justify-content: center; align-items: center; background-color: var(--achtergrondkleur-donker);}
+section#stopwatch .klok     { background-color: white; width: 60%;aspect-ratio: 1;border: 20px solid #000;border-radius: 50%; position: relative;
+
+animation-duration: 5s, 0.5s; 
+animation-delay: 0s, 5s;
+animation-iteration-count: 1, infinite;
+}
+section#stopwatch:hover .klok { animation-name:klokanimatie, tweedeanimatie;  }
+
+section#stopwatch .wijzer    { position: absolute;width: 10px;height: 40%;
+                                left: calc(50% - (10px/2)); bottom: 50%;
+                                background-color: #000;z-index: 1; 
+                                animation-duration: 5s; 
+                            transform-origin: center bottom;}
+
+section#stopwatch:hover .wijzer {animation-name: ronddraaien}
+
+
+section#stopwatch .stip     { position: absolute; 
+                                left: calc(50% - (var(--grootte-stipje-klok) / 2));
+                                top: calc(50% - (var(--grootte-stipje-klok) /2)); 
+                                 width: var(--grootte-stipje-klok); aspect-ratio: 1; border-radius: 50%;background-color: black; z-index: 2; }

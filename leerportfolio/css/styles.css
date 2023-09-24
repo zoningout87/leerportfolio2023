@@ -22,19 +22,19 @@ main {display: grid;grid-template-columns: repeat(2, 4fr);grid-area: inhoud; }
 main section {background-color: #0f1660;aspect-ratio: 2; }
 
 
-section#about                        { display: flex; justify-content: center; align-items: center; background-color: #4d697d;}
-section#about .inhoudAbout           {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
-section#about:hover                        { display: flex; justify-content: center; align-items: center; background-color: #070e32;}
+section#leer                        { display: flex; justify-content: center; align-items: center; background-color: #4d697d;}
+section#leer .inhoudLeer          {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#leer:hover                        { display: flex; justify-content: center; align-items: center; background-color: #476e79;}
 
 section#frontend                     { display: flex; justify-content: center; align-items: center; background-color: #a6c1c0;}
 section#frontend .inhoudFrontend      {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
 section#frontend:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
-section#designs                      { display: flex; justify-content: center; align-items: center; background-color: #72a8b4;}
-section#designs .inhoudDesigns        {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
-section#designs:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
-section#project                      { display: flex; justify-content: center; align-items: center; background-color: #737f80;}
-section#project .inhoudProject       {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#project                      { display: flex; justify-content: center; align-items: center; background-color: #72a8b4;}
+section#project .inhoudProject      {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
 section#project:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
+section#proftaak                     { display: flex; justify-content: center; align-items: center; background-color: #737f80;}
+section#proftaak .inhoudProftaak       {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#proftaak:hover                        { display: flex; justify-content: center; align-items: center; background-color: #78becb;}
 
 section#information                 { display: flex; justify-content: center;  background-color: #a6c1c0;}
 

@@ -19,11 +19,11 @@ nav a:nth-child(4):hover~.animation {width: 100px;left: 340px;}
 nav a:nth-child(5) {width: 100px;}
 nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 
-
+h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
 h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
 h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
-p {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+p {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: left;}
 a {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
 
 
@@ -32,11 +32,25 @@ main section {background-color: #1c1f3e;}
 
 section#information .naam               {  background-color: #0b0436;height: 20%; width: 100%; font-size: 50px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
-section#watkanik                        {display: flex; }
-section#watkanik .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
-section#watkanik .titel            {  background-color: #04081d; width: 100%; font-size: 35px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white; display: flex;justify-content: center; align-items: center;}
-section#watkanik .leerdoel           {  background-color: #1d093e;  width: 100%; font-size: 15px;padding:40px;font-family: 'Courier New', Courier, monospace; }
-section#watkanik .vaardigheid          {  background-color: #1d093e;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk                        {display: flex; }
+section#hoofdstuk .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk .doelomschrijvingsection2     {  background-color: #686f82; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk .doelomschrijvingsection3     {  background-color: #72a8b4; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk .doelomschrijvingsection4     {  background-color: #6d7f83; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk .doelomschrijvingsection5    {  background-color: #1b5a69; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+
+
+section#hoofdstuk .titel            {  background-color: #04081d; width: 100%; font-size: 35px;padding:50px;font-family: 'Courier New', Courier, monospace; color: white; display: flex;justify-content: center; align-items: center;}
+section#hoofdstuk .leerdoel           {  background-color: #1d093e;  width: 100%; font-size: 15px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk .vaardigheid          {  background-color: #1d093e;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk .vaardigheidsection2          {  background-color: #686f82;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk .vaardigheidsection3          {  background-color: #72a8b4;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk .vaardigheidsection4          {  background-color: #6d7f83;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+section#hoofdstuk .vaardigheidsection5          {  background-color: #1b5a69;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
+
+
+
+
 
 .geschiedenis                           {  background-color: #8bbfcf;height: 30%; width: 100%; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;}
 section#zoningout                       {   display: flex; flex-direction: row-reverse;}
@@ -54,11 +68,17 @@ section#end                        {display: flex;}
 section#end .tekstend             {   background-color: #3c4a74; font-size: 25px; padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
 section#end .zoningoutimage         {  background-color: #0b092b;}
 
-section#love                        {display: flex;flex-direction:row-reverse;}
-section#love .tekstlove            {   background-color: #99a6b7; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
-section#love .zoningoutimage         {  background-color: #0b092b;  }
+section#rip                        {display: flex;flex-direction:row-reverse;}
+section#rip .tekstrip           {   background-color: #27384e; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
+section#rip .zoningoutimage         {  background-color: #0b092b;  }
 
+section#love                      {display: flex;}
+section#love .tekstlove            {   background-color: #296994; font-size: 25px; padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
+section#rip .zoningoutimage         {  background-color: #0b092b;}
 
+section#magician                        {display: flex;flex-direction:row-reverse;}
+section#magician .tekstmagician            {   background-color: #1c3454; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
+section#magician .zoningoutimage         {  background-color: #0b092b;  }
 
 
 

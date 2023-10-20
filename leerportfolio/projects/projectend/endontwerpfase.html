@@ -85,26 +85,49 @@
 
 
 <section id="hoofdstuk"><div class="doelomschrijvingsection2"><a name="VISUALS"><h3>VISUALS</h3></a></div></section>        
-<section id="carsel"><div class="container">
-    <button id="left-btn"><i class="arrow"></i></button>
-    <img id="carousel" src="./../../images/girl.jpg" alt="">
-    <button id="right-btn"><i class="arrow"></i></button>
-</div></section>
-
-<h3>Deze moet in een carroussel maar dat is nog niet gelukt </h3>
-
-<section id="hoofdstuk"><img src="../../images/parallaxforest.jpg" alt="">
-    <img src="../../images/building.jpg" alt=""></section>
-   
-   
-<section id="hoofdstuk"><img src="../../images/girl.jpg" alt="">
-<img src="../../images/girl2.jpg" alt=""></section>
-
-    <section id="hoofdstuk"><img src="../../images/burningsun.jpg" alt=""></div>
-
-        <img src="../../images/crow.jpg" alt=""></section>
 
 
+<div class="carousel">
+    <img src="./images/girl.jpg" alt="Image 1" class="active">
+    <img src="../images/girl2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <button class="carousel-button prev" onclick="prevSlide()">&#9664;</button>
+  <button class="carousel-button next" onclick="nextSlide()">&#9654;</button>
+
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel img');
+
+    function showSlide(slideIndex) {
+      if (slideIndex < 0) {
+        currentSlide = slides.length - 1;
+      } else if (slideIndex >= slides.length) {
+        currentSlide = 0;
+      } else {
+        currentSlide = slideIndex;
+      }
+
+      slides.forEach((slide, index) => {
+        if (index === currentSlide) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    showSlide(currentSlide);
+  </script>
 
 <section id="hoofdstuk"><div class="doelomschrijvingsection3"><a name="WIREFRAMES"><h3>WIREFRAMES</h3></a></div></section>
 
@@ -132,7 +155,7 @@
         COPYRIGHT ⓒ FEMKE VAN OVERVELD
     </footer>
 
-    <script src="../../js/script.js"></script>
+
 
 </body>
 </html>

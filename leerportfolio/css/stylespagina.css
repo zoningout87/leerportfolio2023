@@ -84,3 +84,4 @@ section#magician .zoningoutimage         {  background-color: #0b092b;  }
 
 footer                      { grid-area: voetstuk; height: 70px; }
 header, footer              {    display: flex;justify-content: center;align-items: center; font-family: 'Courier New', Courier, monospace; background-color: #4d555c; color: #6fa4a6;height: 70px;}
+

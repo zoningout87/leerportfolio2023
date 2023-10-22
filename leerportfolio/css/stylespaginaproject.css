@@ -21,10 +21,14 @@ nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 
 h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
-h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
-h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
-p {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: left;}
-a {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
+h3:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+
+
+h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;text-transform: uppercase;}
+p {font-family: 'Courier New', Courier, monospace;color: aliceblue; }
+a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none;}
+
 
 
 /* Dropdown Button */
@@ -80,12 +84,37 @@ a {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
   }
   
 
+
+
 main section {background-color: #1c1f3e;}
+
+nav {flex-direction: column;position: relative;margin: 20px;width: 600px;height: 50px;background: #4d555c;border-radius: 8px;font-size: 0;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);font-family: 'Courier New', Courier, monospace;}
+nav a {font-size: 20px;text-transform: uppercase;color: white;text-decoration: none;line-height: 50px;position: relative;z-index: 1;display: inline-block;text-align: center;font-family: 'Courier New', Courier, monospace;}
+nav .animation {position: absolute;height: 100%;/*height: 5px; */top: 0;/*bottom: 0; */z-index: 0;background: #3b6770;;border-radius: 8px;transition: all .5s ease 0s;}
+nav a:nth-child(1) {width: 100px;}
+nav .start-home,a:nth-child(1):hover~.animation {width: 100px;left: 0px;}
+nav a:nth-child(2) {width: 110px;}
+nav a:nth-child(2):hover~.animation {width: 110px;left: 100px;}
+nav a:nth-child(3) {width: 130px;}
+nav a:nth-child(3):hover~.animation {width: 130px;left: 210px;}
+nav a:nth-child(4) {width: 100px;}
+nav a:nth-child(4):hover~.animation {width: 100px;left: 340px;}
+nav a:nth-child(5) {width: 100px;}
+nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
+
+
+
+
+
+
+
 
 section#information .naam               {  background-color: #0b0436;height: 20%; width: 100%; font-size: 50px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
-section#hoofdstuk                        {display: flex; }
-section#hoofdstuk .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk                        {display: flex; flex-direction: row; justify-content: space-between; }
+section#hoofdstuk .doelomschrijving     {  background-color: #1c1f3e; width:20%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white; flex:1;}
+
+section#hoofdstuk .doelomschrijvingsection1     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection2     {  background-color: #686f82; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection3     {  background-color: #72a8b4; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection4     {  background-color: #6d7f83; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
@@ -100,10 +129,6 @@ section#hoofdstuk .vaardigheidsection3          {  background-color: #72a8b4;  w
 section#hoofdstuk .vaardigheidsection4          {  background-color: #6d7f83;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
 section#hoofdstuk .vaardigheidsection5          {  background-color: #1b5a69;  width: 100%; font-size: 25px;padding:40px;font-family: 'Courier New', Courier, monospace; }
 
-
-
-
-
 .geschiedenis                           {  background-color: #8bbfcf;height: 30%; width: 100%; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;}
 section#zoningout                       {   display: flex; flex-direction: row-reverse;}
 section#zoningout  .zoningouttekst      {  background-color: #3c4a74; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
@@ -111,6 +136,12 @@ section#zoningout  .zoningoutimage      {  background-color: #1c1f3e;height: 30%
 
 
 
+
+@media (max-width: 768px) {
+  section#hoofdstuk {
+    flex-direction: column; /* Schakelt over naar een kolomindeling op mobiele apparaten */
+  }
+}
 
 
 

@@ -19,12 +19,16 @@ nav a:nth-child(4):hover~.animation {width: 100px;left: 340px;}
 nav a:nth-child(5) {width: 100px;}
 nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 
-h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
+h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center; text-transform: uppercase;}
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
-h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
-h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
-p {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: left;}
-a {font-family: 'Courier New', Courier, monospace;color: aliceblue;}
+h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
+h3:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+
+
+h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;text-transform: uppercase;}
+p {font-family: 'Courier New', Courier, monospace;color: aliceblue; }
+a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none;}
+
 
 
 
@@ -34,6 +38,7 @@ section#information .naam               {  background-color: #0b0436;height: 20%
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#hoofdstuk                        {display: flex; }
 section#hoofdstuk .doelomschrijving     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
+section#hoofdstuk .doelomschrijvingsection1     {  background-color: #1c1f3e; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection2     {  background-color: #686f82; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection3     {  background-color: #72a8b4; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}
 section#hoofdstuk .doelomschrijvingsection4     {  background-color: #6d7f83; width:100%; font-size: 25px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white;}

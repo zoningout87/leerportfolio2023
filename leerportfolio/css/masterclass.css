@@ -2,6 +2,13 @@
     --achtergrondkleur-donker: #222;
     --grootte-stipje-klok: 40px;}
 
+  @font-face {
+    font-family: "cowboy";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("../images/cowboy.ttf") format("TrueType");
+  }
 
 
 
@@ -19,10 +26,30 @@ section#kleurslang>div:nth-child(6n+4)>div  {background-color: rgb(216, 245, 0);
 section#kleurslang>div:nth-child(8n+3)>div  {background-color: rgb(64, 255, 0);}
 
 @keyframes ronddraaien{
-    0%     {transform: rotate(0deg);}
+    0%   {transform: rotate(0deg);}
     100%   {transform: rotate(360deg);} 
    
 }
+
+@keyframes verduisteren {
+    0%,30% {transform: translateY(0%);}
+    100% {transform: translateY(-65%);}
+
+}
+
+@keyframes slapen {
+    0%,30% {filter: brightness(100%);}
+    80%, 100% {filter: brightness(20%)};
+
+}
+
+@keyframes draaien {
+    0%,30% {rotate:0deg;}
+    80%, 100% {rotate:-180deg;}
+
+}
+
+
 
 
 @keyframes klokanimatie{
@@ -64,5 +91,22 @@ section#stopwatch .stip     { position: absolute;
                                 top: calc(50% - (var(--grootte-stipje-klok) /2)); 
                                  width: var(--grootte-stipje-klok); aspect-ratio: 1; border-radius: 50%;background-color: black; z-index: 2; }
 
-footer                      { grid-area: voetstuk; height: 50px; }
-header, footer              {    display: flex;justify-content: center;align-items: center;}
+section#tekstafbeelding { background-color: purple; display: flex; justify-content: center; align-items: center;}
+section#tekstafbeelding h2 {font-weight: 200;font-size: 150px; text-transform: uppercase; background-image: url("../images/achtergrond.jpg"); background-position: center center; background-size: 500px auto; color: transparent; -webkit-background-clip:text; background-clip: text; filter:grayscale(100%); transition: all 500ms ease-in-out;  }
+section#tekstafbeelding:hover h2 {background-size: 600px auto; filter: grayscale(0%);}
+
+section#dag             {overflow: hidden; position: relative;background-color: red; }
+section#dag #achtergrond {  animation-name: verduisteren; animation-duration: 8s; animation-iteration-count: infinite; 
+    animation-direction: alternate;width: 100%; aspect-ratio: 1/3; background: linear-gradient(0deg, #040335 40%, #6e2a92 50%, #fea101 54%, #cff50f 68%, #00eeff 79%); z-index: 1;  }
+
+
+
+
+section#dag #aarde      {  animation-name: slapen; animation-duration: 8s; animation-iteration-count: infinite; 
+    animation-direction: alternate;background-color: green; position: absolute; width: 500%; aspect-ratio: 1; border-radius: 50%; z-index:3; top:80%; left:50%; transform:translateX(-50%);}
+
+section#dag #draaias { animation-name: draaien; animation-duration: 8s; animation-iteration-count: infinite; 
+    animation-direction: alternate;width: 200%;aspect-ratio:1; position: absolute; right: 0; top: 0; z-index: 2;}
+section#dag #draaias #zon {position: absolute; right: 30px; top: 30px; width: 200px; height: 200px; background-color: #cff50f; border-radius: 50%; box-shadow: 0px 0px 15px 8px #e68c5b, 0px 0px 63px 0px #ffea00;} 
+section#dag #draaias #maan { position: absolute; left: 55px; bottom: 55px; width: 150px; height: 150px; background-color: #595959; border-radius: 50%; box-shadow: 0px 0px 15px 8px #000000 inset, 0px 0px 25px 4px #d4d4d4; ;} 
+

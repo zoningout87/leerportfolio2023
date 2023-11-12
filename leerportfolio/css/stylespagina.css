@@ -22,22 +22,25 @@ nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center; text-transform: uppercase;}
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
 h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
-h3:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; }
 
 h2:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
-
+h5 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
 
 
 h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;text-transform: uppercase;}
-p {font-family: 'Courier New', Courier, monospace;color: aliceblue; }
-a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none;}
+p {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 20px; }
+a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none; }
+a:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: underline; }
 
 
 
 
 main section {background-color: #1c1f3e;}
 
+section#navbar                          {display: flex; justify-content: center; align-items: center;}
+section#navbar .buttons                 {  background-color: #1c1f3e; width:100%; font-size: 15px; padding:70px;font-family: 'Courier New', Courier, monospace; color: white; display: flex; justify-content: center; align-items: center;}
 section#information .naam               {  background-color: #0b0436;height: 20%; width: 100%; font-size: 50px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#information .naam2               {  background-color: #37586b;height: 10%; width: 100%; font-size: 40px;padding:50px;font-family: 'Courier New', Courier, monospace; display: flex;justify-content: center; align-items: center;}
 section#hoofdstuk                        {display: flex; }
@@ -85,9 +88,6 @@ section#love                      {display: flex;}
 section#love .tekstlove            {   background-color: #296994; font-size: 25px; padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
 section#rip .zoningoutimage         {  background-color: #0b092b;}
 
-section#magician                        {display: flex;flex-direction:row-reverse;}
-section#magician .tekstmagician            {   background-color: #1c3454; font-size: 25px;padding:50px;font-family: 'Courier New', Courier, monospace;color: white;}
-section#magician .zoningoutimage         {  background-color: #0b092b;  }
 
 
 

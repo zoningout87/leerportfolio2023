@@ -1,0 +1,47 @@
+*                   { margin: 0;padding: 0;list-style: none;user-select: none;box-sizing: border-box;}
+
+body { display: grid;grid-template-columns: repeat(1, 1fr);grid-template-areas: 
+    "kop kop"
+"inhoud inhoud"
+"inhoud inhoud"
+"voetstuk voetstuk"; overflow: hidden; background-color: #4d555c; }
+a:link {color: rgb(255, 255, 255);text-decoration: none;}
+a:visited {color: white;text-decoration: none;}
+a:hover {color: rgb(4, 46, 85);text-decoration: none;}
+a:active {color: rgb(110, 213, 253);text-decoration: none;}
+header { grid-area: kop;height: 70px;justify-content: flex-start;}
+h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
+h3 a {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+h3:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
+h2 a {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+h2:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+
+
+
+main {display: grid;grid-template-columns: repeat(2, 4fr);grid-area: inhoud; }
+
+
+main section {background-color: #0f1660;aspect-ratio: 2; }
+
+
+section#leer                        { display: flex; justify-content: center; align-items: center; background-color: #4d697d;}
+section#leer .inhoudLeer          {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#leer:hover                        { display: flex; justify-content: center; align-items: center; background-color: #476e79;}
+
+section#frontend                     { display: flex; justify-content: center; align-items: center; background-color: #a6c1c0;}
+section#frontend .inhoudFrontend      {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#frontend:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
+section#project                      { display: flex; justify-content: center; align-items: center; background-color: #72a8b4;}
+section#project .inhoudProject      {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#project:hover                        { display: flex; justify-content: center; align-items: center; background-color: #3b6770;}
+section#proftaak                     { display: flex; justify-content: center; align-items: center; background-color: #737f80;}
+section#proftaak .inhoudProftaak       {color: rgb(237, 237, 237);font-family: 'Courier New', Courier, monospace; font-size: 40px;}
+section#proftaak:hover                        { display: flex; justify-content: center; align-items: center; background-color: #78becb;}
+
+section#information                 { display: flex; justify-content: center;  background-color: #a6c1c0;}
+
+
+
+footer                      { grid-area: voetstuk; height: 70px; }
+header, footer              {    display: flex;justify-content: center;align-items: center; font-family: 'Courier New', Courier, monospace; background-color: #4d555c; color: #6fa4a6;}

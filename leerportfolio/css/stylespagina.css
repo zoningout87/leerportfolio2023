@@ -21,18 +21,18 @@ nav a:nth-child(5):hover~.animation {width: 100px;left: 440px;}
 
 h1 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center; text-transform: uppercase;}
 h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; margin-left:20%;}
-h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; text-transform: uppercase;}
+h3 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-transform: uppercase;}
 
-h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none; }
+h2 {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; }
 
-h2:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: underline;}
+h2:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 25px; text-decoration: none;}
 h5 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;}
 
 
 h4 {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-align: center;text-transform: uppercase;}
 p {font-family: 'Courier New', Courier, monospace;color: aliceblue; font-size: 20px; }
-a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none; }
-a:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: underline; }
+a {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: underline; }
+a:hover {font-family: 'Courier New', Courier, monospace;color: aliceblue; text-decoration: none; }
 
 
 
